@@ -3,6 +3,7 @@ import Navbar from '../components/_App/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import PortfolioDetailsContent from '../components/PortfolioDetails/PortfolioDetailsContent';
 import Footer from '../components/_App/Footer';
+import Section from '../components/Section';
 
 const MusicVideos = () => (
   <>
@@ -14,7 +15,10 @@ const MusicVideos = () => (
       activePageText="Portfolio Details"
       imgClass="bg-8"
     />
-    <PortfolioDetailsContent />
+    <Section
+      title="Music Video Creator"
+      body=""
+    />
     <Footer />
   </>
 );
