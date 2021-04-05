@@ -1,0 +1,37 @@
+{
+    "name": "jay-does-video",
+    "version": "0.0.1",
+    "description": "JayDoesVideo - Videographer, film maker, and cinephile",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build && next export",
+        "start": "next start"
+    },
+    "author": "EnvyTheme.com",
+    "license": "ISC",
+    "dependencies": {
+        "next": "^10.0.6",
+        "next-redux-wrapper": "^6.0.2",
+        "react": "^16.14.0",
+        "react-accessible-accordion": "^3.3.3",
+        "react-dom": "^16.14.0",
+        "react-modal-video": "^1.2.6",
+        "react-owl-carousel3": "^2.2.5",
+        "react-redux": "^7.2.2",
+        "react-select": "^3.2.0",
+        "react-toastify": "^6.2.0",
+        "redux": "^4.0.5",
+        "redux-devtools-extension": "^2.13.8",
+        "redux-thunk": "^2.3.0",
+        "sass": "^1.32.6"
+    },
+    "devDependencies": {
+        "eslint": "^7.23.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.23.1",
+        "eslint-plugin-react-hooks": "^4.2.0"
+    }
+}
