@@ -55,7 +55,7 @@ const UpcomingMovies = () => {
               <div className="latest-trailer-content">
                 <span>Latest Trailer</span>
                 <h2>Upcoming Movies By Our Production</h2>
-                <p>Video production work with producing video content. It is the analogical of film making, but the images are digitally recorded instead of film stock. There are three levels of video production: production, pre-production and post-production.</p>
+                <p>I'm a US based film-maker specializing in a more cinematic approach to videos for your music, wedding, promotional, or corporate video..</p>
               </div>
             </div>
 

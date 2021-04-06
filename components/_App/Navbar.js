@@ -100,8 +100,8 @@ const Navbar = () => {
                         </Link>
                       </li>
                       <li className="nav-item">
-                        <Link href="/corporate" activeClassName="active">
-                          <a onClick={toggleNavbar} className="nav-link">Corporate</a>
+                        <Link href="/realestate" activeClassName="active">
+                          <a onClick={toggleNavbar} className="nav-link">Real Estate</a>
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -118,7 +118,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/blog-grid" activeClassName="active">
+                    <Link href="/blogs" activeClassName="active">
                       <a onClick={toggleNavbar} className="nav-link">Blog</a>
                     </Link>
                   </li>
@@ -287,11 +287,11 @@ const Navbar = () => {
                                         </ul>
                                     </li> */}
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link href="/contact" activeClassName="active">
                       <a onClick={toggleNavbar} className="nav-link">Contact</a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
 
                 {/* <div className="others-option">

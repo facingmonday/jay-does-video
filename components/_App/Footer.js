@@ -61,15 +61,17 @@ const Footer = () => {
                     <a href="mailto:jaydoesvideo@pm.me">
                       jaydoesvideo@pm.me
                     </a>
-
-                    <a href="#">
+                  </li>
+                  <li>
+                    <i className="socialicon-instagram" />
+                    <a href="https://instagram.com/jaydoesvideo">
                       Instagram: @jaydoesvideo
                     </a>
                   </li>
                   <li>
-                    <i className="flaticon-phone-call" />
-                    <a href="tel:+1-587-785-4578">
-                      +1 587 785 4578
+                    <i className="socialicon-tiktok" />
+                    <a href="https://tiktok.com/@jaydoesvideo">
+                      TikTok: @jaydoesvideo
                     </a>
                   </li>
                 </ul>
@@ -116,33 +118,33 @@ const Footer = () => {
 
                 <ul className="instagram">
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram1.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram1.png" alt="Image" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram2.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram2.png" alt="Image" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram3.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram3.png" alt="Image" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram4.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram4.png" alt="Image" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram5.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram5.png" alt="Image" />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
-                      <img src="/img/instagram/instagram6.jpg" alt="Image" />
+                    <a href="https://instagram.com/jaydoesvideo">
+                      <img src="/img/instagram/instagram6.png" alt="Image" />
                     </a>
                   </li>
                 </ul>
@@ -159,8 +161,7 @@ const Footer = () => {
               Copyright @
               {currentYear}
               {' '}
-              JayDoesVideo. Designed By
-              <a href="https://envytheme.com/" target="blank">EnvyTheme</a>
+              JayDoesVideo. All Rights Reserved.
             </p>
           </div>
         </div>

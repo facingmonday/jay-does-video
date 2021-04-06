@@ -39,8 +39,8 @@ const HeroSlider = () => {
               <div className="d-table-cell">
                 <div className="container">
                   <div className="hero-slider-text one">
-                    <h1>We Make A Awesome Branded Videos</h1>
-                    <p>High-quality video production</p>
+                    <h1>Artistic, modern cinematography style</h1>
+                    <p>brings images to life</p>
 
                     <div className="slider-btn">
                       <Link href="/work">
@@ -58,9 +58,8 @@ const HeroSlider = () => {
               <div className="d-table-cell">
                 <div className="container">
                   <div className="hero-slider-text two">
-                    <h1>We Work Globally Brilliantly Done</h1>
-                    <p>High-quality video production</p>
-
+                    <h1>Every frame has a story</h1>
+                    <p>High-quality visual imagery</p>
                     <div className="slider-btn">
                       <Link href="/work">
                         <a className="default-btn">View More</a>
@@ -77,8 +76,8 @@ const HeroSlider = () => {
               <div className="d-table-cell">
                 <div className="container">
                   <div className="hero-slider-text three">
-                    <h1>Introducing The Next Level Of Video Production</h1>
-                    <p>High-quality video production</p>
+                    <h1>Next Level Video Production</h1>
+                    <p>4k HDR Film</p>
 
                     <div className="slider-btn">
                       <Link href="/work">
@@ -97,26 +96,22 @@ const HeroSlider = () => {
       <div className="social-wrap">
         <ul>
           <li className="follow-us">
-            Follow Us:
+            Follow Me:
           </li>
+
           <li>
-            <a href="#" target="_blank">
-              <i className="bx bxl-twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
+            <a href="https://instagram.com/jaydoesvideo" target="_blank" rel="noreferrer">
               <i className="bx bxl-instagram" />
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              <i className="bx bxl-facebook" />
+            <a href="https://tiktok.com/@jaydoesvideo" target="_blank" rel="noreferrer">
+              <i className="socialicon-tiktok" />
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
-              <i className="bx bxl-youtube" />
+            <a href="https://vimeo.com/jaydoesvideo" target="_blank" rel="noreferrer">
+              <i className="socialicon-vimeo" />
             </a>
           </li>
         </ul>

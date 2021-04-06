@@ -9,7 +9,7 @@ const About = () => (
           <div className="about-content">
             <span>Who Am I?</span>
             <h2>Videographer, film maker, and cinephile.</h2>
-            <p>Video production work with producing video content. It is the analogical of film making, but the images are digitally recorded instead of film stock. There are three levels of video production: production, pre-production and post-production the images are digitally recorded instead of film stock producing</p>
+            <p>I'm a US based film-maker specializing in a more cinematic approach to videos for your music, wedding, promotional, or corporate video. the images are digitally recorded instead of film stock producing</p>
 
             <Link href="/about">
               <a className="default-btn">Learn More</a>

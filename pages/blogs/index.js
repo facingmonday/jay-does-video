@@ -1,16 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
-import Navbar from '../components/_App/Navbar';
-import PageBanner from '../components/Common/PageBanner';
-import Footer from '../components/_App/Footer';
+import Navbar from '../../components/_App/Navbar';
+import PageBanner from '../../components/Common/PageBanner';
+import Footer from '../../components/_App/Footer';
 
 const blogs = [
   {
     userName: 'Jay',
-    imagePath: '/img/blog/blog1.jpg',
-    date: '11/29/2021',
+    imagePath: '/img/blog/information-blues.jpg',
+    date: '03/29/2021',
     title: 'Information Blues',
     description: 'Activist group known as The Woovs risk everything to overthrow a tyrannical social media empire and save society from the Information Blues.',
+    href: '#',
+  },
+  {
+    userName: 'Jay',
+    imagePath: '/img/blog/stalker-tarkovsky.jpg',
+    date: '04/05/2021',
+    title: 'Stalker - A Film by Andrei Tarkovsky',
+    description: 'I recently watched the movie Stalker by Andrei Tarkovsky for the first time and wanted to talk about it.',
     href: '#',
   },
 ];
@@ -39,7 +47,7 @@ const BlogGrid = () => (
             }) => (
               <div className="col-lg-4 col-md-6">
                 <div className="single-blog">
-                  <Link href="/blog-details">
+                  <Link href={href}>
                     <a>
                       <img src={imagePath} alt="Image" />
                     </a>
@@ -49,7 +57,7 @@ const BlogGrid = () => (
                     <ul>
                       <li>
                         <i className="flaticon-user" />
-                        <Link href="#"><a>{userName}</a></Link>
+                        <Link href={href}><a>{userName}</a></Link>
                       </li>
 
                       <li>

@@ -7,8 +7,9 @@ import WeProvideServices from '../components/About/WeProvideServices';
 import TeamStyleTwo from '../components/Common/TeamStyleTwo';
 import AwardWinningMovies from '../components/Common/AwardWinningMovies';
 import ContactWithUs from '../components/Common/ContactWithUs';
-import PartnersStyleThree from '../components/Common/PartnersStyleThree';
+import Partners from '../components/Common/Partners';
 import Footer from '../components/_App/Footer';
+import Section from '../components/Section';
 
 const About = () => (
   <>
@@ -28,7 +29,12 @@ const About = () => (
                 <AwardWinningMovies />
             </div> */}
     <ContactWithUs />
-    <PartnersStyleThree />
+    <Partners />
+    <Section
+      superTitle="All the best gear"
+      title="Use the right camera for the shoot"
+      imagePath="/img/about/fx3-setup.jpg"
+    />
     <Footer />
   </>
 );
