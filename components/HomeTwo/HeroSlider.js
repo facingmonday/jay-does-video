@@ -75,7 +75,7 @@ const HeroSlider = () => {
                     <p>High-quality video production</p>
 
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>
@@ -127,7 +127,7 @@ const HeroSlider = () => {
                     <p>High-quality video production</p>
 
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>
@@ -179,7 +179,7 @@ const HeroSlider = () => {
                     <p>High-quality video production</p>
 
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>

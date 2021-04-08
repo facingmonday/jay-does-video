@@ -50,25 +50,25 @@ const PromotionalVideos = () => (
       columns={3}
       videos={[
         {
-          name: 'Brittany & Matt',
-          photoUrl: '/img/weddings/brittany-social.jpg',
+          name: 'Country Fest',
+          photoUrl: '/img/liveevents/country-fest.jpg',
           href: '#',
-          videoId: '349903241',
-          videoHref: 'https://vimeo.com/349903241',
+          videoId: '275444995',
+          videoHref: 'https://vimeo.com/275444995',
         },
         {
-          name: 'Bobbi & Bradley',
-          photoUrl: '/img/weddings/bobbibradley-social.jpg',
+          name: 'BCM Fight Night VIII',
+          photoUrl: '/img/liveevents/bcm-fight-night.jpg',
           href: '#',
-          videoId: '533330759',
-          videoHref: 'https://vimeo.com/533330759',
+          videoId: '400112514',
+          videoHref: 'https://vimeo.com/400112514',
         },
         {
-          name: 'James & Regina',
-          photoUrl: '/img/weddings/jamesregina-social.jpg',
+          name: 'Cherry Blossom',
+          photoUrl: '/img/liveevents/cherry-blossom.jpg',
           href: '#',
-          videoId: '533332392',
-          videoHref: 'https://vimeo.com/533332392',
+          videoId: '271205675',
+          videoHref: 'https://vimeo.com/271205675',
         },
       ]}
     />

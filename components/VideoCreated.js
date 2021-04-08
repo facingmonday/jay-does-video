@@ -14,13 +14,13 @@ const VideoCreated = ({ videoId, channel, images = [] }) => {
           <div className="row align-items-center">
             <div className="col-lg-3 col-md-3 p-0">
               <div className="video-img">
-                <img src="/img/liveevents/video-created1.jpg" alt="Image" />
+                <img src={images && images.length ? images[0].path : '/img/liveevents/video-created1.jpg'} alt="Image" />
               </div>
             </div>
 
             <div className="col-lg-6 col-md-6 p-0">
               <div className="video-wrap">
-                <img src="/img/liveevents/video-created2.jpg" alt="Image" />
+                <img src={images && images.length ? images[1].path : '/img/liveevents/video-created2.jpg'} alt="Image" />
                 <Link href="#play-video">
                   <a
                     onClick={(e) => { e.preventDefault(); openModal(); }}
@@ -34,7 +34,7 @@ const VideoCreated = ({ videoId, channel, images = [] }) => {
 
             <div className="col-lg-3 col-md-3 p-0">
               <div className="video-img">
-                <img src="/img/liveevents/video-created3.jpg" alt="Image" />
+                <img src={images && images.length ? images[2].path : '/img/liveevents/video-created3.jpg'} alt="Image" />
               </div>
             </div>
           </div>

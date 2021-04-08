@@ -26,7 +26,7 @@ const WeddingVideos = () => (
       columns={3}
       videos={[
         {
-          name: 'Baity Wedding',
+          name: 'Dana & Craig',
           photoUrl: '/img/weddings/baity.jpg',
           href: '#',
           videoId: '366383639',
@@ -40,7 +40,7 @@ const WeddingVideos = () => (
           videoHref: 'https://vimeo.com/390368720',
         },
         {
-          name: 'Bobbi & Bradley',
+          name: 'Margarita & Timothy',
           photoUrl: '/img/weddings/margarita.jpg',
           href: '#',
           videoId: '367436881',

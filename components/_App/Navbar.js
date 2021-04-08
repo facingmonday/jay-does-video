@@ -89,11 +89,11 @@ const Navbar = () => {
                           <a onClick={toggleNavbar} className="nav-link">Weddings</a>
                         </Link>
                       </li>
-                      <li className="nav-item">
+                      {/* <li className="nav-item">
                         <Link href="/promotional" activeClassName="active">
                           <a onClick={toggleNavbar} className="nav-link">Promotional</a>
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="nav-item">
                         <Link href="/events" activeClassName="active">
                           <a onClick={toggleNavbar} className="nav-link">Live Events</a>

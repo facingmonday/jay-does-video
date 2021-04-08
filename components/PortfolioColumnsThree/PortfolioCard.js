@@ -16,7 +16,7 @@ const portfolioData = [
     name: 'Baity Weding',
     photoUrl: '/img/portfolio/portfolio2.jpg',
     href: '/work/baity-wedding',
-    videoId: '66383639',
+    videoId: '366383639',
     videoHref: 'https://vimeo.com/366383639',
   },
   {
@@ -153,7 +153,7 @@ const PortfolioCard = () => {
           }
 
           <div className="col-12 text-center">
-            <Link href="/work">
+            <Link href="/portfolio">
               <a className="default-btn">
                 View More
               </a>

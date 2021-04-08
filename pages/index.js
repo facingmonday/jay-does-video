@@ -10,7 +10,7 @@ import AwardWinningMovies from '../components/Common/AwardWinningMovies';
 import GetInTouch from '../components/Common/GetInTouch';
 import UpcomingMovies from '../components/DefaultHome/UpcomingMovies';
 import ExclusiveShop from '../components/DefaultHome/ExclusiveShop';
-import TeamStyleOne from '../components/Common/TeamStyleOne';
+import VideoGrid from '../components/VideoGrid';
 import LatestNews from '../components/DefaultHome/LatestNews';
 import Partners from '../components/Common/Partners';
 import Footer from '../components/_App/Footer';
@@ -28,6 +28,32 @@ const Index = () => {
       {/* <AwardWinningMovies /> */}
       {/* <GetInTouch /> */}
       <UpcomingMovies />
+      <VideoGrid
+        columns={3}
+        videos={[
+          {
+            name: 'King Locust - Chapter 2',
+            photoUrl: '/img/musicvideos/king-locust-chapter-2.jpg',
+            href: '#',
+            videoId: '285405674',
+            videoHref: 'https://vimeo.com/285405674',
+          },
+          {
+            name: 'The Woovs - Information Blues',
+            photoUrl: '/img/musicvideos/adam-lengyel-takes-talent.jpg',
+            href: '#',
+            videoId: '251947317',
+            videoHref: 'https://vimeo.com/251947317',
+          },
+          {
+            name: 'Baity Wedding',
+            photoUrl: '/img/weddings/baity.jpg',
+            href: '#',
+            videoId: '366383639',
+            videoHref: 'https://vimeo.com/366383639',
+          },
+        ]}
+      />
       {/* <ExclusiveShop products={products.slice(0, 4)} /> */}
       {/* <TeamStyleOne /> */}
       <Partners />

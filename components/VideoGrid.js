@@ -3,21 +3,25 @@ import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 
 const VideoGrid = ({ videos }) => {
-  const [isOpen, setIsOpen] = React.useState(true);
+  const [isOpen, setIsOpen] = React.useState(false);
   const [videoId, setVideoId] = React.useState();
   const handleClick = (id) => (evt) => {
     evt.preventDefault();
     setVideoId(id);
-    setIsOpen(!isOpen);
+    setIsOpen(true);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+    setVideoId(null);
   };
   return (
     <section className="portfolio-area ptb-50">
       {/* If you want to change the video need to update videoID */}
       <ModalVideo
         channel="vimeo"
-        isOpen={!isOpen}
+        isOpen={isOpen && videoId}
         videoId={videoId}
-        onClose={() => setIsOpen(!isOpen)}
+        onClose={handleClose}
       />
 
       <div className="container">
@@ -55,7 +59,7 @@ const VideoGrid = ({ videos }) => {
           }
 
           <div className="col-12 text-center">
-            <Link href="/work">
+            <Link href="/portfolio">
               <a className="default-btn">
                 View More
               </a>

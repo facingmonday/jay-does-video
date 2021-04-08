@@ -1,115 +1,75 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const LatestNews = () => {
-    return (
-        <section className="blog-area pt-100 pb-70">
-			<div className="container">
-				<div className="section-title">
-					<span className="top-title">News Feeds</span>
-					<h2>Get The Latest News</h2>
-				</div>
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState();
+  useEffect(() => {
+    const fetchBlogPosts = async () => {
+      setLoading(true);
+      try {
+        const result = await fetch(
+          'https://api.cosmicjs.com/v2/buckets/jays-modern-life-production/objects?pretty=true&query=%7B%22type%22%3A%22posts%22%7D&read_key=3HY3Blxg8HB9HXNp5h8hhlY20ZpdZ7KIErxcCQQb9CCcKs7d8w&limit=20&props=slug,title,content,metadata,',
+        );
+        if (result.ok) {
+          const { objects } = await result.json();
+          console.log('result', objects);
+          setData(objects);
+        }
+      } catch (e) {
+        console.log('e');
+      }
+      setLoading(false);
+    };
 
-				<div className="row">
-					<div className="col-lg-4 col-md-6">
-						<div className="single-blog">
-                            <Link href="/blog-details">
-                                <a><img src="/img/blog/blog1.jpg" alt="Image" /></a>
-                            </Link>
-						
-							<div className="blog-content">
-								<ul>
-									<li>
-										<i className="flaticon-user"></i>
-                                        <Link href="#"><a>Admin</a></Link>
-									</li>
-									<li>
-										<i className="flaticon-calendar"></i>
-										17/07/2020
-									</li>
-								</ul>
+    fetchBlogPosts();
+  }, []);
+  return (
+    <section className="blog-area pt-100 pb-70">
+      <div className="container">
+        <div className="section-title">
+          <span className="top-title">News Feeds</span>
+          <h2>Get The Latest News</h2>
+        </div>
 
-                                <Link href="/blog-details">
-                                    <a>
-                                        <h3>Video Production Services Your Business Must Have</h3>
-                                    </a>
-                                </Link>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
+        <div className="row">
+          {data && data.length ? data.map((post) => (
+            <div className="col-lg-4 col-md-6">
+              <div className="single-blog">
+                <Link href={`/blogs/${post.slug}`}>
+                  <a><img src={post.metadata.thumbnail.url} alt="Image" /></a>
+                </Link>
 
-                                <Link href="/blog-details">
-                                    <a className="read-more">Learn More</a>
-                                </Link>
-							</div>
-						</div>
-					</div>
+                <div className="blog-content">
+                  <ul>
+                    <li>
+                      <i className="flaticon-user" />
+                      <Link href="#"><a>Jay</a></Link>
+                    </li>
+                    <li>
+                      <i className="flaticon-calendar" />
+                      {post.metadata.posted_date}
+                    </li>
+                  </ul>
 
-					<div className="col-lg-4 col-md-6">
-						<div className="single-blog">
-                            <Link href="/blog-details">
-                                <a><img src="/img/blog/blog2.jpg" alt="Image" /></a>
-                            </Link>
-							
-							<div className="blog-content">
-								<ul>
-									<li>
-										<i className="flaticon-user"></i>
-										<Link href="#"><a>Admin</a></Link>
-									</li>
-									<li>
-										<i className="flaticon-calendar"></i>
-										18/07/2020
-									</li>
-								</ul>
+                  <Link href={`/blogs/${post.slug}`}>
+                    <a>
+                      <h3>{post.title}</h3>
+                    </a>
+                  </Link>
+                  <p>{post.metadata.summary}</p>
 
-                                <Link href="/blog-details">
-                                    <a>
-                                        <h3>Why You Need To Hire top className Video Production company</h3>
-                                    </a>
-                                </Link>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
-
-								<Link href="/blog-details">
-                                    <a className="read-more">Learn More</a>
-                                </Link>
-							</div>
-						</div>
-					</div>
-
-					<div className="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-						<div className="single-blog">
-                            <Link href="/blog-details">
-                                <a><img src="/img/blog/blog3.jpg" alt="Image" /></a>
-                            </Link>
-							
-							<div className="blog-content">
-								<ul>
-									<li>
-										<i className="flaticon-user"></i>
-										<Link href="#"><a>Admin</a></Link>
-									</li>
-									<li>
-										<i className="flaticon-calendar"></i>
-										19/07/2020
-									</li>
-								</ul>
-	
-                                <Link href="/blog-details">
-                                    <a>
-                                        <h3>Choosing A Video Location For Your Next Project</h3>
-                                    </a>
-                                </Link>
-								<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua sit amet consectetur.</p>
-
-								<Link href="/blog-details">
-                                    <a className="read-more">Learn More</a>
-                                </Link>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    )
-}
+                  <Link href={`/blogs/${post.slug}`}>
+                    <a className="read-more">Read More</a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          )) : null}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default LatestNews;

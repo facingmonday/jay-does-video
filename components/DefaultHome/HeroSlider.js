@@ -43,7 +43,7 @@ const HeroSlider = () => {
                     <p>brings images to life</p>
 
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>
@@ -61,7 +61,7 @@ const HeroSlider = () => {
                     <h1>Every frame has a story</h1>
                     <p>High-quality visual imagery</p>
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>
@@ -80,7 +80,7 @@ const HeroSlider = () => {
                     <p>4k HDR Film</p>
 
                     <div className="slider-btn">
-                      <Link href="/work">
+                      <Link href="/portfolio">
                         <a className="default-btn">View More</a>
                       </Link>
                     </div>

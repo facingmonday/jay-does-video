@@ -8,8 +8,8 @@ const AboutContent = () => (
           <div className="about-content">
             <span>JayDoesVideo</span>
             <h2>Videographer, film maker, and cinephile.</h2>
-            <h3>Who We Are</h3>
-            <p>I'm a US based film-maker specializing in a more cinematic approach to videos for your music, wedding, promotional, or corporate video..</p>
+            <h3>Who I Am</h3>
+            <p>I'm a US based film-maker specializing in a more cinematic approach to videos for your music, wedding, promotional, or corporate video.</p>
 
             <h3 className="mt-30">Who I Work With</h3>
             <p>I work with musicians, artists, marketing teams and business owners to come up with the best approach to filming your video. Plan the work. Work the plan.</p>

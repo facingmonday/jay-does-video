@@ -4,7 +4,7 @@ import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/_App/Footer';
 import Section from '../components/Section';
 import VideoCreated from '../components/VideoCreated';
-import VideoGrid from '../components/VideoGrid';
+import VimeoVideo from '../components/VimeoVideo';
 
 const PromotionalVideos = () => (
   <>
@@ -22,33 +22,33 @@ const PromotionalVideos = () => (
       body="Make your property stand out with a personalized Real Estate video. Increase your marketing to attract more buyers."
       imagePath="/img/realestate/collage.jpg"
     />
-    <VideoCreated videoId={275444995} channel="vimeo" />
-    <VideoGrid
-      columns={3}
-      videos={[
+    <VideoCreated
+      videoId={275444995}
+      channel="vimeo"
+      images={[
         {
-          name: 'Baity Wedding',
-          photoUrl: '/img/weddings/baity.jpg',
-          href: '#',
-          videoId: '366383639',
-          videoHref: 'https://vimeo.com/366383639',
+          path: '/img/realestate/portfolio1.jpg',
         },
         {
-          name: 'Bobbi & Bradley',
-          photoUrl: '/img/weddings/bobbibradley.jpg',
-          href: '#',
-          videoId: '390368720',
-          videoHref: 'https://vimeo.com/390368720',
+          path: '/img/realestate/portfolio2.jpg',
         },
         {
-          name: 'Bobbi & Bradley',
-          photoUrl: '/img/weddings/margarita.jpg',
-          href: '#',
-          videoId: '367436881',
-          videoHref: 'https://vimeo.com/367436881',
+          path: '/img/realestate/portfolio3.jpg',
         },
       ]}
     />
+    <section className="ptb-100">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-6">
+            <VimeoVideo id="532730044" />
+          </div>
+          <div className="col-sm-6">
+            <VimeoVideo id="533795012" />
+          </div>
+        </div>
+      </div>
+    </section>
     <Footer />
   </>
 );
