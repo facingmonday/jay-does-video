@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "socialicon";
+    src: url("/fonts/socialicon.ttf?") format("truetype"),
+url("/fonts/socialicon.woff?") format("woff"),
+url("/fonts/socialicon.woff2?") format("woff2"),
+url("/fonts/socialicon.eot") format("embedded-opentype"),
+url("/fonts/socialicon.svg") format("svg");
+}
+
+i[class^="socialicon-"]:before, i[class*=" socialicon-"]:before {
+    font-family: socialicon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.socialicon-facebook-app-symbol:before {
+    content: "\f101";
+}
+.socialicon-facebook:before {
+    content: "\f102";
+}
+.socialicon-fair-trade:before {
+    content: "\f103";
+}
+.socialicon-github-big-logo:before {
+    content: "\f104";
+}
+.socialicon-instagram-1:before {
+    content: "\f105";
+}
+.socialicon-instagram:before {
+    content: "\f106";
+}
+.socialicon-linkedin:before {
+    content: "\f107";
+}
+.socialicon-social-network:before {
+    content: "\f108";
+}
+.socialicon-tik-tok:before {
+    content: "\f109";
+}
+.socialicon-tiktok:before {
+    content: "\f10a";
+}
+.socialicon-twitter-1:before {
+    content: "\f10b";
+}
+.socialicon-twitter:before {
+    content: "\f10c";
+}
+.socialicon-vimeo-social-logo:before {
+    content: "\f10d";
+}
+.socialicon-vimeo:before {
+    content: "\f10e";
+}
+.socialicon-youtube:before {
+    content: "\f10f";
+}

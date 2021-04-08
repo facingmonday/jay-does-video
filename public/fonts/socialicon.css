@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?2c0de2fe0d330f9f6e9606a30f7e3481") format("truetype"), url("./flaticon.woff?2c0de2fe0d330f9f6e9606a30f7e3481") format("woff"), url("./flaticon.woff2?2c0de2fe0d330f9f6e9606a30f7e3481") format("woff2"), url("./flaticon.eot?2c0de2fe0d330f9f6e9606a30f7e3481#iefix") format("embedded-opentype"), url("./flaticon.svg?2c0de2fe0d330f9f6e9606a30f7e3481#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-facebook-app-symbol:before {
+  content: "";
+}
+
+.flaticon-facebook:before {
+  content: "";
+}
+
+.flaticon-fair-trade:before {
+  content: "";
+}
+
+.flaticon-github-big-logo:before {
+  content: "";
+}
+
+.flaticon-instagram-1:before {
+  content: "";
+}
+
+.flaticon-instagram:before {
+  content: "";
+}
+
+.flaticon-linkedin:before {
+  content: "";
+}
+
+.flaticon-social-network:before {
+  content: "";
+}
+
+.flaticon-tik-tok:before {
+  content: "";
+}
+
+.flaticon-tiktok:before {
+  content: "";
+}
+
+.flaticon-twitter-1:before {
+  content: "";
+}
+
+.flaticon-twitter:before {
+  content: "";
+}
+
+.flaticon-vimeo-social-logo:before {
+  content: "";
+}
+
+.flaticon-vimeo:before {
+  content: "";
+}
+
+.flaticon-youtube:before {
+  content: "";
+}
+/*# sourceMappingURL=socialicon.css.map */

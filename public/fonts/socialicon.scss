@@ -1,0 +1,85 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?2c0de2fe0d330f9f6e9606a30f7e3481") format("truetype"),
+url("./flaticon.woff?2c0de2fe0d330f9f6e9606a30f7e3481") format("woff"),
+url("./flaticon.woff2?2c0de2fe0d330f9f6e9606a30f7e3481") format("woff2"),
+url("./flaticon.eot?2c0de2fe0d330f9f6e9606a30f7e3481#iefix") format("embedded-opentype"),
+url("./flaticon.svg?2c0de2fe0d330f9f6e9606a30f7e3481#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "facebook-app-symbol": "\f101",
+    "facebook": "\f102",
+    "fair-trade": "\f103",
+    "github-big-logo": "\f104",
+    "instagram-1": "\f105",
+    "instagram": "\f106",
+    "linkedin": "\f107",
+    "social-network": "\f108",
+    "tik-tok": "\f109",
+    "tiktok": "\f10a",
+    "twitter-1": "\f10b",
+    "twitter": "\f10c",
+    "vimeo-social-logo": "\f10d",
+    "vimeo": "\f10e",
+    "youtube": "\f10f",
+);
+
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-fair-trade:before {
+    content: map-get($flaticon-map, "fair-trade");
+}
+.flaticon-github-big-logo:before {
+    content: map-get($flaticon-map, "github-big-logo");
+}
+.flaticon-instagram-1:before {
+    content: map-get($flaticon-map, "instagram-1");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-linkedin:before {
+    content: map-get($flaticon-map, "linkedin");
+}
+.flaticon-social-network:before {
+    content: map-get($flaticon-map, "social-network");
+}
+.flaticon-tik-tok:before {
+    content: map-get($flaticon-map, "tik-tok");
+}
+.flaticon-tiktok:before {
+    content: map-get($flaticon-map, "tiktok");
+}
+.flaticon-twitter-1:before {
+    content: map-get($flaticon-map, "twitter-1");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-vimeo-social-logo:before {
+    content: map-get($flaticon-map, "vimeo-social-logo");
+}
+.flaticon-vimeo:before {
+    content: map-get($flaticon-map, "vimeo");
+}
+.flaticon-youtube:before {
+    content: map-get($flaticon-map, "youtube");
+}
