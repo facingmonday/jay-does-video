@@ -67,7 +67,7 @@ const WhatWeDo = () => (
               <div className="what-we-do-item">
                 <i className="flaticon-film-editing" />
                 <h3>Production</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <p>Lights, camera, action. Lets make a movie. Working through the shot list, getting every angle, every take.</p>
               </div>
             </div>
 

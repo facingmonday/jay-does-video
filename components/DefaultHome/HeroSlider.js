@@ -39,8 +39,8 @@ const HeroSlider = () => {
               <div className="d-table-cell">
                 <div className="container">
                   <div className="hero-slider-text one">
-                    <h1>Artistic, modern cinematography style</h1>
-                    <p>brings images to life</p>
+                    <h1>Cinematic music videos</h1>
+                    <p>bring your music to life</p>
 
                     <div className="slider-btn">
                       <Link href="/portfolio">

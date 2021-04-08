@@ -24,10 +24,10 @@ const Index = () => {
       <About />
       <VideoCreated />
       <WhatWeDo />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <AwardWinningMovies /> */}
-      {/* <GetInTouch /> */}
-      <UpcomingMovies />
+      <GetInTouch />
+      {/* <UpcomingMovies /> */}
       <VideoGrid
         columns={3}
         videos={[
@@ -35,15 +35,15 @@ const Index = () => {
             name: 'King Locust - Chapter 2',
             photoUrl: '/img/musicvideos/king-locust-chapter-2.jpg',
             href: '#',
-            videoId: '285405674',
-            videoHref: 'https://vimeo.com/285405674',
+            videoId: '256243041',
+            videoHref: 'https://vimeo.com/256243041',
           },
           {
             name: 'The Woovs - Information Blues',
-            photoUrl: '/img/musicvideos/adam-lengyel-takes-talent.jpg',
+            photoUrl: '/img/portfolio/portfolio1.jpg',
             href: '#',
-            videoId: '251947317',
-            videoHref: 'https://vimeo.com/251947317',
+            videoId: '351969090',
+            videoHref: 'https://vimeo.com/351969090',
           },
           {
             name: 'Baity Wedding',

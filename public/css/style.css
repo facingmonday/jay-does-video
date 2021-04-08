@@ -753,6 +753,7 @@ Hero Slider Area Style
 ======================================================*/
 .hero-slider-area {
   position: relative;
+  height: 100vh;
 }
 
 .hero-slider-area .owl-item.active .hero-slider-text {
