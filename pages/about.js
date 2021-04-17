@@ -19,7 +19,7 @@ const About = () => (
       homePageUrl="/"
       homePageText="Home"
       activePageText="About"
-      imgClass="bg-1"
+      imgClass="bg-about"
     />
     <AboutContent />
     <FunFacts />

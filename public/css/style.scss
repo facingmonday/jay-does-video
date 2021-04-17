@@ -883,6 +883,9 @@ Hero Slider Area Style
 	&.bg-6 {
 		background-image: url(/img/main-slider/main-slider6.jpg);
 	}
+  &.bg-about {
+		background-image: url(/img/main-slider/about.jpg);
+	}
 }
 .hero-slider-text {
 	text-align: center;
@@ -3479,6 +3482,9 @@ Page Title Area Style
 	}
 	&.bg-24 {
 		background-image: url(/img/page-banner/page-banner24.jpg);
+	}
+  &.bg-about {
+		background-image: url(/img/page-banner/about.jpg);
 	}
 	.page-title-content {
 		margin-top: -10px;

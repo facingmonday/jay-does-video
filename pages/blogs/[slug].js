@@ -12,7 +12,6 @@ export async function getStaticPaths() {
   );
   if (result.ok) {
     const { objects } = await result.json();
-    console.log('result', objects);
     const paths = objects.map((post) => ({ params: { slug: post.slug } }));
     return {
       paths,
@@ -24,11 +23,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // Fetch necessary data for the blog post using params.id
-  console.log('params', params);
   const result = await fetch(
     `https://api.cosmicjs.com/v2/buckets/jays-modern-life-production/objects?pretty=true&read_key=3HY3Blxg8HB9HXNp5h8hhlY20ZpdZ7KIErxcCQQb9CCcKs7d8w&props=slug,title,content,metadata&query={"slug":"${params.slug}"}`,
   );
-  console.log(result);
   if (result.ok) {
     const { objects } = await result.json();
     console.log('objects', objects);
