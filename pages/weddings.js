@@ -31,8 +31,8 @@ const WeddingVideos = () => (
           <h2 className="mt-30 mb-30" style={{textAlign: 'center'}}>Check us out on The Knot and Wedding Wire</h2>
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }}>
-          <a target="_blank" href="https://www.theknot.com/marketplace/redirect-2059739?utm_source=vendor_website&utm_medium=banner&utm_term=30fbf9ed-6a17-4340-888b-4ecc7fb4a94c&utm_campaign=vendor_badge_assets"><img style={{width: '190px', height: '190px'}} alt="As Seen on The Knot" border="0" src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png" /></a>
-          <a rel='nofollow' target='_blank' href='https://www.weddingwire.com/biz/jaydoesvideo/92e1ad4b0ca83111.html' title='weddingwire.com'><img style={{ paddingLeft: '20px', height: '190px'}} alt='weddingwire.com' src='/img/weddings/weddingwire.jpg' /></a>
+          <a target="_blank" href="https://www.theknot.com/marketplace/redirect-2059739?utm_source=vendor_website&utm_medium=banner&utm_term=30fbf9ed-6a17-4340-888b-4ecc7fb4a94c&utm_campaign=vendor_badge_assets"><img style={{ width: '190px', height: '190px' }} alt="As Seen on The Knot" border="0" src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png" /></a>
+          <a rel='nofollow' target='_blank' href='https://www.weddingwire.com/biz/jaydoesvideo/92e1ad4b0ca83111.html' title='weddingwire.com'><img style={{ paddingLeft: '20px', height: '190px' }} alt='weddingwire.com' src='/img/weddings/weddingwire.jpg' /></a>
         </div>
       </div>
     </section>
