@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import ModalVideo from 'react-modal-video';
+const ModalVideo = dynamic(() => import('react-modal-video'), { ssr: false });
 
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import ModalVideo from 'react-modal-video';
+
+import dynamic from 'next/dynamic';
+const ModalVideo = dynamic(() => import('react-modal-video'), { ssr: false });
 
 const VideoCreated = () => {
     const [isOpen, setIsOpen] = React.useState(true);

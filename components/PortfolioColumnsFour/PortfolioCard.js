@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ModalVideo from 'react-modal-video';
+const ModalVideo = dynamic(() => import('react-modal-video'), { ssr: false });
 
 const PortfolioCard = () => {
   const [isOpen, setIsOpen] = React.useState(true);

@@ -2,7 +2,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
-import ModalVideo from 'react-modal-video';
+const ModalVideo = dynamic(() => import('react-modal-video'), { ssr: false });
 
 const options = {
     loop:true,
