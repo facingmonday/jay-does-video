@@ -5,7 +5,7 @@ import Comments from './Comments';
 const BlogDetailsContent = ({ post }) => (
   <div className="blog-details-wrap">
     <div className="blog-top-content-wrap">
-      <img src={post.metadata.post_image.url} alt="Image" />
+      <img src={post?.metadata?.post_image.url} alt="Image" />
 
       <ul className="post-details">
         <li>
@@ -22,7 +22,7 @@ const BlogDetailsContent = ({ post }) => (
         </li>
       </ul>
 
-      <div dangerouslySetInnerHTML={{ __html: post.metadata.body }} />
+      <div dangerouslySetInnerHTML={{ __html: post.metadata?.body }} />
     </div>
 
     <div className="tags-and-shear-wrap">
@@ -33,7 +33,7 @@ const BlogDetailsContent = ({ post }) => (
               <span>Tags:</span>
             </li>
             {
-              Boolean(post.metadata.tags && post.metadata.tags.length) && post.metadata.tags.map((tag) => (
+              Boolean(post.metadata?.tags && post.metadata.tags.length) && post.metadata.tags.map((tag) => (
                 <li>
                   <Link href="#"><a>{tag.name}</a></Link>
                 </li>
